@@ -47,7 +47,7 @@ class UserBase(BaseModel):
 class UserDisplay(BaseModel):
     username: str
     email:str
-    items: Optional[List[Article]] = []
+    items: List[Article] = []
     
     
     model_config = ConfigDict(from_attributes=True)
