@@ -1,5 +1,6 @@
 from typing import List
 from pydantic import BaseModel, ConfigDict
+from typing import Optional
 
 
 
@@ -46,7 +47,7 @@ class UserBase(BaseModel):
 class UserDisplay(BaseModel):
     username: str
     email:str
-    items: List[Article] = []
+    items: Optional[List[Article]] = []
     
     
     model_config = ConfigDict(from_attributes=True)
