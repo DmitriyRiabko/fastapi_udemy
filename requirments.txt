@@ -4,3 +4,6 @@ sqlalchemy
 passlib
 bcrypt
 python-multipart
+aiofiles
+pytest
+jinja2
